@@ -21,11 +21,24 @@ const LandingSection = () => (
       name='Anastasiia Demidova'
       />
 
-      <Heading as='h4' size={{ base: "sm", md: "lg", lg: "lg", xl: "xl" }} noOfLines={1}>{greeting}</Heading>
+      <Heading as='h4' size={{ base: "sm", md: "lg", lg: "lg" }} sx={{
+            "@media screen and (max-width: 1028px)": {
+              size: 15,
+            },
+          }}  noOfLines={1}>{greeting}</Heading>
 
       <VStack spacing={6}>
-        <Heading as='h1' size={{ base: "lg", md: "2xl", lg: "3xl", xl: "3xl" }} noOfLines={1}>{bio1}</Heading>
-        <Heading as='h1' size={{ base: "lg", md: "2xl", lg: "3xl", xl: "3xl" }} noOfLines={1}>{bio2}</Heading>
+        <Heading as='h1' size={{ base: "lg", md: "3xl", lg: "3xl" }} sx={{
+            "@media screen and (max-width: 1028px)": {
+              size: 30,
+            },
+          }} 
+          noOfLines={1}>{bio1}</Heading>
+        <Heading as='h1' size={{ base: "lg", md: "3xl", lg: "3xl" }} sx={{
+            "@media screen and (max-width: 1028px)": {
+              size: 30,
+            },
+          }} noOfLines={1}>{bio2}</Heading>
       </VStack>
 
       
