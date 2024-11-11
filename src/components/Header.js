@@ -87,10 +87,15 @@ const Header = () => {
           px={16}
           py={4}
           justifyContent="space-between"
+          sx={{
+            "@media screen and (max-width: 600px)": {
+              px:7,
+            },
+          }}
           alignItems="center"
         >
           <nav>
-            <HStack spacing={8}>
+            <HStack spacing={{ base: "4", md: "8", lg: "8" }}>
               {
                 socials.map((social)=>
                   <a href={social.url} key={social.url}>
@@ -101,7 +106,12 @@ const Header = () => {
             </HStack>
           </nav>
           <nav>
-            <HStack spacing={8}>
+            <HStack spacing={{ base: "3", md: "8", lg: "8" }} sx={{
+              "@media screen and (max-width: 430px)": {
+                display: "none",
+              },
+            }}
+            >
               <a href="#projects" onClick={handleClick("projects")}>Projects</a>
               <a href="#contactme" onClick={handleClick("contactme")}>Contact Me</a>
             </HStack>

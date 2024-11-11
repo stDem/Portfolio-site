@@ -5,7 +5,8 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Work Space",
+    src: "",
     description:
       "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
     getImageSrc: () => require("../images/photo1.jpg"),
@@ -35,7 +36,7 @@ const ProjectsSection = () => {
     <FullScreenSection
       backgroundColor="#14532d"
       isDarkBackground
-      p={8}
+      p={5}
       alignItems="flex-start"
       spacing={8}
     >
@@ -43,9 +44,10 @@ const ProjectsSection = () => {
         Featured Projects
       </Heading>
       <Box
-        display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={8}
+         display={{ base: "flex", md: "grid" }}
+         flexDirection={{ base: "column", md: "initial" }}
+         gridTemplateColumns={{ base: "none", md: "repeat(2, minmax(0, 1fr))" }}
+         gap={8} 
       >
         {projects.map((project) => (
           <Card

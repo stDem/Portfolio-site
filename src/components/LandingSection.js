@@ -17,15 +17,15 @@ const LandingSection = () => (
   >
     <VStack spacing={5}>
       <Avatar src="https://64.media.tumblr.com/928cb1fc73a0074c52f14500df117dc0/tumblr_pxdfk8D7Nu1qcac69o1_1280.jpg"
-      size='2xl'
+      size="2xl"
       name='Anastasiia Demidova'
       />
 
-      <Heading as='h4' size='md' noOfLines={1}>{greeting}</Heading>
+      <Heading as='h4' size={{ base: "sm", md: "lg", lg: "lg", xl: "xl" }} noOfLines={1}>{greeting}</Heading>
 
       <VStack spacing={6}>
-        <Heading as='h1' size='3xl' noOfLines={1}>{bio1}</Heading>
-        <Heading as='h1' size='3xl' noOfLines={1}>{bio2}</Heading>
+        <Heading as='h1' size={{ base: "lg", md: "2xl", lg: "3xl", xl: "3xl" }} noOfLines={1}>{bio1}</Heading>
+        <Heading as='h1' size={{ base: "lg", md: "2xl", lg: "3xl", xl: "3xl" }} noOfLines={1}>{bio2}</Heading>
       </VStack>
 
       
