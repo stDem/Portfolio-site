@@ -5,7 +5,7 @@ import {
   faGithub,
   faLinkedin,
   faWhatsapp,
-  faGoogle,
+  faGoogleDrive,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
 
@@ -13,22 +13,27 @@ const socials = [
   {
     icon: faEnvelope,
     url: "mailto:stxdem@gmail.com",
+    title: 'my email',
   },
   {
     icon: faGithub,
     url: "https://github.com/stDem?tab=repositories",
+    title: 'my gitHub repositories',
   },
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/anastasiia-demidova-0aa44a329/",
+    title: 'my Linkedin',
   },
   {
     icon: faWhatsapp,
     url: "https://api.whatsapp.com/send?phone=491628645712",
+    title: 'write me in WhatsApp',
   },
   {
-    icon: faGoogle,
+    icon: faGoogleDrive,
     url: "https://drive.google.com/drive/u/2/folders/1VPCcvftPZAneZu0BB-xQq0Upe2h9qmER",
+    title: 'google drive with my diplomas/certificates',
   },
 ];
 
@@ -98,7 +103,7 @@ const Header = () => {
             <HStack spacing={{ base: "4", md: "8", lg: "8" }}>
               {
                 socials.map((social)=>
-                  <a href={social.url} key={social.url}>
+                  <a href={social.url} key={social.url} alt={social.title} title={social.title}>
                     <FontAwesomeIcon icon={social.icon} size="2x" />
                   </a>
                 )
