@@ -3,8 +3,7 @@ import { Avatar, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 
 const greeting = "Hello, I am Anastasiia Demidova!";
-const bio1 = "A frontend developer";
-const bio2 = "specialised in React";
+const bio1 = "Frontend/Web developer";
 
 // Implement the UI for the LandingSection component according to the instructions.
 // Use a combination of Avatar, Heading and VStack components.
@@ -34,11 +33,7 @@ const LandingSection = () => (
             },
           }} 
           noOfLines={1}>{bio1}</Heading>
-        <Heading as='h1' size={{ base: "lg", md: "3xl", lg: "3xl" }} sx={{
-            "@media screen and (max-width: 1028px)": {
-              size: 30,
-            },
-          }} noOfLines={1}>{bio2}</Heading>
+        
       </VStack>
 
       

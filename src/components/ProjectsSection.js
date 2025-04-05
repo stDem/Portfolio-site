@@ -20,6 +20,21 @@ const projects = [
     getImageSrc: () => require("../images/photo2.png"),
   },
   {
+    title: "Little Lemon Restaurant",
+    src: "https://little-lemon-seven-theta.vercel.app/",
+    description:
+      "Little Lemon is a website for a small Restaurant on React JS. It is a final Capstone project on'Front-End Developer' Coursera-Meta on 'Meta Frontend-developer' course.",
+    getImageSrc: () => require("../images/photo6.png"),
+  },
+
+  {
+    title: "Portfolio web-site (this site)",
+    src: "https://portfolio-site-seven-dun.vercel.app/",
+    description:
+      "Portfolio website is a responsive website on React JS containing some information about me and my projects with links.",
+    getImageSrc: () => require("../images/photo4.png"),
+  },
+  {
     title: "Auto Service",
     src: "https://auto-service-portfolio-site.vercel.app/",
     description:
@@ -27,11 +42,11 @@ const projects = [
     getImageSrc: () => require("../images/photo3.png"),
   },
   {
-    title: "Portfolio web-site (this site)",
-    src: "https://portfolio-site-seven-dun.vercel.app/",
+    title: "Zopital - Zodiacs website",
+    src: "https://stdem.github.io/Zopital--Zodiacs-website/",
     description:
-      "Portfolio website is a responsive website on React JS containing some information about me and my projects with links.",
-    getImageSrc: () => require("../images/photo4.png"),
+      " Zopital - is a Zodiacs website implemented using only HTML and CSS aimed at layout. It is a team assignment on 'Frontend Development Hands-on Training' – Kreativstorm.",
+    getImageSrc: () => require("../images/photo5.png"),
   },
 ];
 
