@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faGithub,
   faLinkedin,
   faWhatsapp,
   faGoogleDrive,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack } from "@chakra-ui/react";
+import { Box, HStack, Link } from "@chakra-ui/react";
 
 const socials = [
   {
@@ -37,7 +38,7 @@ const socials = [
   },
 ];
 
-const Header = () => {
+const Header = () => {vcvc
   const headerRef = useRef(null); 
  
   useEffect(() => { 
@@ -103,9 +104,9 @@ const Header = () => {
             <HStack spacing={{ base: "4", md: "8", lg: "8" }}>
               {
                 socials.map((social)=>
-                  <a href={social.url} key={social.url} alt={social.title} title={social.title}>
+                  <Link href={social.url} key={social.url} alt={social.title} title={social.title} isExternal>
                     <FontAwesomeIcon icon={social.icon} size="2x" />
-                  </a>
+                  </Link>
                 )
               }
             </HStack>
