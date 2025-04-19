@@ -38,7 +38,7 @@ const socials = [
   },
 ];
 
-const Header = () => {vcvc
+const Header = () => {
   const headerRef = useRef(null); 
  
   useEffect(() => { 
